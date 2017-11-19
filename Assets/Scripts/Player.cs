@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 	void Start () {
         count = 0;
         playerMovement = new Queue<Direction>();
+        
 	}
 	
 	// Update is called once per frame
@@ -18,36 +19,36 @@ public class Player : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            createBullet(0, -100, 0, 180);
-            transform.Translate(0f, 1f, 0f);
+           // createBullet(0, -100, 0, 180);
+            transform.Translate(0f, .3f, 0f);
             updateQueue(Direction.up);
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            createBullet(0, -100, 0, 180);
-            transform.Translate(0f, -1f, 0f);
+           // createBullet(0, -100, 0, 180);
+            transform.Translate(0f, -.3f, 0f);
             updateQueue(Direction.down);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            createBullet(100, 0, 0, 90);
-            transform.Translate(1f, 0f, 0f);
+           // createBullet(100, 0, 0, 90);
+            transform.Translate(.3f, 0f, 0f);
             updateQueue(Direction.right);
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            createBullet(-100, 0, 0, 270);
-            transform.Translate(-1f, 0f, 0f);
+            //createBullet(-100, 0, 0, 270);
+            transform.Translate(-.3f, 0f, 0f);
             updateQueue(Direction.left);
-        }
-        int i = 0;
-        foreach (Direction x in playerMovement)
-        {
-            print(i+": "+x);
-            i++;
         }
 
     }
+    void OnCollision(Collision collision)
+    {
+        Debug.Log("collision");
+    }
+
+
     void updateQueue(Direction currentPlayerMovement)
     {
         if (playerMovement.Count == 50)
