@@ -92,8 +92,7 @@ public class Player : MonoBehaviour {
     void createBullet(float x, float y , float z, int rotation)
     {
         GameObject bullet = new GameObject("Bullet");
-
-        bullet.transform.localScale += new Vector3(10f, 20f, 0f);
+        bullet.transform.localScale += new Vector3(5f, 10f, 0f);
         bullet.AddComponent<SpriteRenderer>();
         bullet.GetComponent<SpriteRenderer>().sprite = bulletSprite;
         bullet.transform.Translate(this.transform.position.x, this.transform.position.y, this.transform.position.z);
