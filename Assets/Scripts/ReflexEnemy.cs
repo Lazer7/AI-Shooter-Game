@@ -11,35 +11,25 @@ public class ReflexEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         GameObject player = GameObject.Find("PlayerObject");
-        Queue<Direction> playerMovement = player.GetComponent<Player>().playerMovement;
-        while(playerMovement != null)
+        Vector3 playerposition = player.transform.position;
+        if (playerposition.x > transform.position.x)
         {
-            switch (playerMovement.Peek()) {
-                case Direction.up:
-                    this.transform.Translate(0f, 1f, 0f);
-                    playerMovement.Dequeue();
-                    break;
-                case Direction.down:
-                    this.transform.Translate(0f, -1f, 0f);
-                    playerMovement.Dequeue();
-                    break;
-                case Direction.left:
-                    this.transform.Translate(-1f, 0f, 0f);
-                    playerMovement.Dequeue();
-                    break;
-                case Direction.right:
-                    this.transform.Translate(1f, 0f, 0f);
-                    playerMovement.Dequeue();
-                    break;
-
-
-
-            }
-
+            transform.Translate(0.1f, 0, 0);
         }
-       
+        else if (playerposition.x < transform.position.x)
+        {
+            transform.Translate(-0.1f, 0, 0);
+        }
 
-
-	}
+        if (playerposition.y > transform.position.y)
+        {
+            transform.Translate(0,0.1f, 0);
+        }
+        else if (playerposition.y < transform.position.y)
+        {
+            transform.Translate(0,-0.1f, 0);
+        }
+    }
 }
