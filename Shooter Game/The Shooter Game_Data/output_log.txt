@@ -17,16 +17,9 @@ Platform assembly: C:\Users\Jimmy\Documents\GitHub\Shooter Game\Shooter Game\The
 Loading C:\Users\Jimmy\Documents\GitHub\Shooter Game\Shooter Game\The Shooter Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Jimmy\Documents\GitHub\Shooter Game\Shooter Game\The Shooter Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Jimmy\Documents\GitHub\Shooter Game\Shooter Game\The Shooter Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.095 seconds
+- Completed reload, in  0.024 seconds
 Platform assembly: C:\Users\Jimmy\Documents\GitHub\Shooter Game\Shooter Game\The Shooter Game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jimmy\Documents\GitHub\Shooter Game\Shooter Game\The Shooter Game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 2.479011 ms
-Setting up 4 worker threads for Enlighten.
-  Thread -> id: 3798 -> priority: 1 
-  Thread -> id: 1490 -> priority: 1 
-  Thread -> id: 4250 -> priority: 1 
-  Thread -> id: 4814 -> priority: 1 
