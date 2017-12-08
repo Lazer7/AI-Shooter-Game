@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AStarEnemy.cs" />
+    <Compile Include="Assets\Scripts\ButtonAction.cs" />
     <Compile Include="Assets\Scripts\CollisionEvent.cs" />
     <Compile Include="Assets\Scripts\DirectionEnum.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
